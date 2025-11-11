@@ -75,6 +75,8 @@ Para cada cidade, foram calculados:
 
 - Visualização das rotas da MST sobre o mapa viário
 
+---
+
 ## 🔍 Explicação dos Algoritmos
 
 Os cálculos de otimização foram realizados pela combinação de dois algoritmos:
@@ -94,6 +96,8 @@ Isso faz com que o A* seja mais eficiente que o Dijkstra, pois ele prioriza cami
   
 Conecta todos os pontos de um grafo com o menor custo total possível, sem formar ciclos.
 Neste projeto, cada cidade tem um grafo formado pelos POIs (terminais de ônibus), onde o peso de cada aresta é a distância calculada pelo A*. O algoritmo de Kruskal foi utilizado para encontrar a MST, garantindo a menor distância total necessária para interligar todas as estações.
+
+---
 
 ## 📊 Resultados e Análises
 
@@ -131,6 +135,8 @@ As métricas consolidadas abaixo (Média e Desvio Padrão) foram geradas a parti
 
 Esses resultados mostram como a densidade e a organização da malha viária influenciam diretamente no custo total de interligação entre os pontos de interesse.
 
+---
+
 📉 **Análise Crítica:**
 
 A comparação dos resultados mostra que a eficiência de conectividade é inversamente proporcional à escala urbana e à densidade dos POIs. As capitais de médio e grande porte, como Maceió, Natal e João Pessoa, apresentam elevado comprimento total da MST e maior número de POIs, mas mantêm um custo intermediário (entre 2,68 e 3,02 km/POI). Isso indica que, embora as redes sejam amplas, os terminais de ônibus não estão excessivamente dispersos.
@@ -140,6 +146,8 @@ O destaque vai para São Luís, com o maior custo médio (4,43 km/POI), resultad
 Em contrapartida, cidades de porte menor, como Campina Grande (1,21 km/POI) e Mossoró (1,70 km/POI), exibem custos bem mais baixos. Nesses casos, o número reduzido e centralizado de terminais (3 a 4 POIs) forma uma rede MST mais compacta e eficiente.
 
 Assim, o método evidencia não apenas as distâncias físicas, mas também o impacto de fatores geográficos e estruturais. Em grandes centros litorâneos, essas barreiras tornam-se o principal obstáculo à otimização da rede viária.
+
+---
 
 ⚠️ **Limitações:**
 
